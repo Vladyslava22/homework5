@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+margin: 0;
+}
+.animation {
+display: flex;
+justify-content: center;
+margin-top: 20%;
+}
+.rectangle {
+width: 200px;
+height: 200px;
+background-color: blue;
+animation: animation 5s linear infinite;
+}
+.circle {
+width: 200px;
+height: 200px;
+background-color: yellow;
+animation: animation 5s linear infinite;
+}
+@keyframes animation {
+from {
+transform: rotate(0deg);
+}
+50% {
+transform: rotate(160deg);
+}
+to {
+transform: rotate(0deg);
+}
+}
+    </style>
 </head>
 <body>
-$END$
+<div class="animation">
+    <div class="rectangle"></div>
+    <div class="circle"></div>
+</div>
 </body>
 </html>
